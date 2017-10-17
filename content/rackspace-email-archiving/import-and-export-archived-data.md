@@ -91,5 +91,3 @@ Cost and turnaround time both depend on how much data you want to
 recover:
 
 -   The fee for data imports is \$6 per GB of data.
--   For maximum import completion times, see [Time frames for importing
-    and exporting data](#maxtime) at the end of this article.
