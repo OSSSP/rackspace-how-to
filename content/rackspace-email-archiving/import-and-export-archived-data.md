@@ -14,14 +14,14 @@ product_url: rackspace-email-archiving
 You can import data into and export data from your archive in Cloud
 Office.
 
-This article explains how to add a domain in your Cloud Office Control Panel.
-
 ### Prerequisites
 
 - **Applies to:** Administrator
 - **Difficulty:** Easy
 - **Time needed:** Dependent of amount of data being exported or imported
 - **Tools required:**  Cloud Office Control Panel access
+
+For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 ### Exporting data
 
@@ -31,11 +31,9 @@ Rackspace Archiving account:
 -   Export your data from the Archive Manager by creating searches and
     exporting the results of the searches. For information about how to
     export the results of a search, see [Export archive search results
-    in Cloud
-    Office](/how-to/export-archive-search-results-in-cloud-office).
+    in Cloud Office](/how-to/export-archive-search-results-in-cloud-office).
 
-    **Note:** You can export searches with a maximum of 15,000
-results or a total size of 3.5 GB
+    **Note:** You can export searches with a maximum of 15,000 results or a total size of 3.5 GB
 
 -   If you require a bulk export of your archived data, our support team can
     perform the export and provide you with links from which you can
@@ -76,10 +74,12 @@ Office](/how-to/export-archive-search-results-in-cloud-office).
 The following are the *maximum* completion times for both importing and
 exporting:
 
-    - under 25GB    2 weeks
-    - under 50GB    3 weeks
-    - under 100GB   4 weeks
-    - over  100GB   6 weeks
+    - 1GB to 25GB      2 weeks
+    - 26GB to 50GB     3 weeks
+    - 51GB to 100GB    4 weeks
+    - 101GB and above  6 weeks
+
+**Warning:** These time frames are approximations that can vary greatly.
 
 ### Importing data
 
