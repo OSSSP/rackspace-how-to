@@ -5,8 +5,8 @@ title: Create a DMARC policy
 type: article
 created_date: '2017-06-26'
 created_by: Cory Aldrich
-last_modified_date: '2017-10-23'
-last_modified_by: William Loy
+last_modified_date: '2017-12-06'
+last_modified_by: Aaron Medrano
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -67,7 +67,7 @@ Each part of the policy is defined as follows:
 
 **Note:** If your DNS is not hosted with Rackspace, you need access to your DNS provider to add the DMARC policy. If you do not know where your DNS is hosted, see [Find DNS host](/how-to/find-dns-host).
 
-To add your DMARC policy as a TXT record in the Control Panel, follow these steps:
+To add your DMARC policy, with **reporting-mode**, as a TXT record in the Control Panel, follow these steps:
 
 1. Log in to the Cloud Office Control Panel.
 2. In the Domains section of the home page, click the **DNS settings** link.
@@ -86,7 +86,9 @@ To add your DMARC policy as a TXT record in the Control Panel, follow these step
 
 Your new settings take 24 to 48 hours to propagate. For more information on propagation, see [DNS propagation](/how-to/dns-record-definitions#dns-propagation).
 
-### Select an aggregator
+### Monitor the Impact of Implementing DMARC - Select an aggregator
+
+Start with a simple reporting-mode record for a sub-domain or domain that requests that DMARC receivers send you statistics about messages that they see using that domain. A reporting-mode record is a DMARC TXT record that has its policy set to none (p=none). Many companies publish a DMARC TXT record with p=none because they are unsure about how much email they may lose by publishing a more restrictive DMARC policy. It will be up to you to monitor and view the reports before changing the policy to quarantine or reject.
 
 Your DMARC policy is more valuable when you use an aggregator to help filter the
 content of the reports that are returned. Without an aggregator, the reports are in an
@@ -102,3 +104,8 @@ https://dmarc.org/resources/products-and-services/:
 - [dmarcian](http://dmarcian.com)
 - [250OK](http://250OK.com)
 - [Agari](http://agari.com)
+
+
+### Enforcing DMARC
+
+  When you believe that all or most of your legitimate traffic is protected by SPF and DKIM, and you understand the impact of implementing DMARC, you can implement a QUARANTINE or REJECT policy. We advise starting with a quarantine policy to help prevent legitimate mail from being rejected and allow you to troubleshoot. Some admins may choose to keep the quarantine policy indefinitely. These policies are at the discretion of the domain owner on how failed DMARC messages are handled.
