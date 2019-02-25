@@ -1,20 +1,3 @@
-
-
-
-
-Message List
-
-Adrian Bekele [1:05 PM]
-which do you prefer.
-Pasted image at 2019-02-22, 1:05 PM 
-
-Pasted image at 2019-02-22, 1:05 PM 
-
-I like the first one but there isnt a way to get rid of the empty cells below interfaces
-
-Jeremy Cantu [1:33 PM]
-I like the first one too
-
 ---
 permalink: netsec-spheres-of-support-for-dedicated-and-managed-ops
 title: NetSec Spheres of Support
