@@ -5,7 +5,7 @@ title: 'Manage user permissions for Dedicated Hosting'
 type: article
 created_date: '2018-11-28'
 created_by: Kate Dougherty
-last_modified_date: '2018-11-28'
+last_modified_date: '2019-01-14'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -17,15 +17,12 @@ how to manage these permissions.
 You manage permissions in the [MyRackspace
 portal](https://login.rackspace.com) under **Account > Permissions**.
 
-**Note**: To access the **Permissions** area in the MyRackspace portal and
-modify another user’s permissions, you must have one of the following
-permissions:
-
-  - **Account Administrator**: This permission grants a user unlimited access
-    to all sections of the MyRackspace portal.
-
-  - **Admin**: This permission (on a device or service) grants a user the
-    ability to access and manage the device or service.
+**Note**: To access the **Permissions** area in the MyRackspace Portal and
+modify another user’s permissions, you must have either the **Account
+Administrator** permission or the **Admin** permission. The **Account
+Administrator** permission grants the user unlimited access to all sections of
+the MyRackspace Portal. The **Admin** permission (on a device or service)
+grants the user the ability to access and manage the device or service.
 
 ### Categories of permissions
 
@@ -43,7 +40,7 @@ permissions. MyRackspace uses the highest level of permission granted.
 
 ### Methods for assigning permissions
 
-You can assign permissions in the MyRackspace portal in the following ways:
+You can assign permissions in the MyRackspace Portal in the following ways:
 
 - **Assign by User**: Enables you to select an individual and grant them
   access to account-level permissions, linked cloud accounts, devices,
@@ -68,7 +65,7 @@ This section shows you how to manage groups.
 
 Use the following steps to create a user group:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > Permissions**.
 3. At the top of the page, click **Manage Groups**.
 4. In the **User Groups** section, enter a name for the group, then click the
@@ -78,9 +75,9 @@ Use the following steps to create a user group:
 
 #### Create a product group
 
-Use the following steps to create a user group:
+Use the following steps to create a product group:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > Permissions**.
 3. At the top of the page, click **Manage Groups**.
 4. In the **Product Groups** section, enter a name for the group, then click
@@ -92,7 +89,7 @@ Use the following steps to create a user group:
 
 Use the following steps to grant a user group access to a product group:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > Permissions**.
 3. In the **User Groups** section, select an existing user group.
 4. Click **Assign by User** at the top of the page (if it isn't already the
@@ -109,7 +106,7 @@ Use the following steps to grant a user group access to a product group:
 
 Use the following steps to grant a product group access to a user group:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > Permissions**.
 3. At the top of the page, click **Assign by Product**.
 4. In the **Product Groups** section, select an existing product group.
@@ -151,11 +148,11 @@ actions or views:
   </tr>
   <tr>
     <td>Flexible Ticket Viewing (default setting)</td>
-    <td>To enable users to be able to see tickets that include a device that they have permission to view. For example, if a user has access to device A, they see all of the tickets that include device A, even if another device is on the ticket. If device C is later added to the ticket and the user does not have access to device C, the user can still see the ticket.</td>
+    <td>Enables users to see tickets that include a device that they have permission to view. For example, if a user has access to device A, they see all of the tickets that include device A, even if another device is on the ticket. If device C is later added to the ticket and the user does not have access to device C, the user can still see the ticket.</td>
   </tr>
   <tr>
     <td>Strict Ticket Viewing</td>
-    <td>To require users to have access to all of the devices on a ticket in order to see that ticket. For example, if a ticket includes device A and device B, then the user must have permissions to both devices to see the ticket. If device C is later added to the ticket and the user does not have access to device C, the user is no longer be able to see the ticket.</td>
+    <td>Requires users to have access to all of the devices on a ticket in order to see that ticket. For example, if a ticket includes device A and device B, then the user must have permissions to both devices to see the ticket. If device C is later added to the ticket and the user does not have access to device C, the user is no longer be able to see the ticket.</td>
   </tr>
 </table>
 

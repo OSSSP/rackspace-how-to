@@ -2,6 +2,7 @@
 permalink: rpc-microsoft-faq/
 audit_date: '2016-10-21'
 title: Rackspace Private Cloud Powered by Microsoft Cloud Platform FAQ
+type: article
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
@@ -40,7 +41,8 @@ Private Cloud powered by Microsoft Cloud Platform can work for you.
 
 #### Why should I use Microsoft Cloud Platform?
 
--   **Backed by Fanatical Support&reg;**: Microsoft Cloud Platform
+-   **Backed by support that provides a Fanatical Experience&trade;**:
+    Microsoft Cloud Platform
     includes full infrastructure support backed 24x7x365. Guest Virtual
     Machine (VM) support is available on your terms, and guest VMs are also
     supported.

@@ -5,8 +5,8 @@ title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
-last_modified_date: '2018-12-06'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2019-03-15'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -32,12 +32,10 @@ packages, see [Linux Spheres of Support for Dedicated and Managed Operations](/h
 
 All of our Cloud Servers can be configured as development stacks,
 database servers, and web servers. Apache, Lighttpd, Mongrel, and Visual
-Studio are all options.
+Studio are some options.
 
 You can use the programming language of your choice to interact with
-Cloud Servers. For help getting started, use any of the
-Software Development Kits (SDKs) documented at
-<https://developer.rackspace.com/docs/>.
+Cloud Servers.
 
 #### Do you host DNS?
 
@@ -77,8 +75,7 @@ server, you are given a server with unrestricted access. The Managed
 Infrastructure support team does not assist in the installation of
 software or troubleshooting any kind of issue related to the software
 installed. We have some articles in the Rackspace How-To covering basic
-installation of common applications. We also have community forums where
-you can share tips and tricks with other customers.
+installation of common applications.
 
 The [Managed Operations service](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops)
 level provides additional support on Cloud Servers, which includes monitoring,
@@ -149,16 +146,13 @@ support that you need to get the most out of the cloud.
 -   Your first stop should be [Rackspace How-To](/how-to/), which is the best
     source for articles and tutorials to help you get the precise
     answers that you need.
--   Our [Open Cloud Forum](https://community.rackspace.com/products/f/25) in the
-    Rackspace Community is always open. Use the forum to get your
-    questions answered by a Racker.
 -   Do you have a quick question that you can't find an answer for in the
-    Rackspace How-To? Open Chat and talk with our **Fanatical Support**&reg;
-    staff anytime, 24x7x365.
+    Rackspace How-To? As part of the Rackspace Fanatical Experience&trade;, open
+    Chat and talk with our Support staff anytime, 24x7x365.
 -   Do you have a specialized Service Request or are you experiencing a
     problem with our service? Open a ticket. In the Rackspace
     [Cloud Control Panel](https://login.rackspace.com), select
-    **Tickets > **Create Ticket** to open a ticket directly with our support
+    **Tickets > Create Ticket** to open a ticket directly with our support
     teams to report a problem or make a service request.
 -   Call us 24x7x365 at 800 961 4454 (toll-free) or +1 210 312 4000 (international).
 
@@ -272,11 +266,9 @@ To learn more about the Cloud Control Panel, see
 [Introducing the Rackspace Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel).
 However, we do not offer a control panel like **Plesk** or **cPanel**. You're free to
 install such packages for your own Cloud Server. If you are installing cPanel, be
-sure to install on a clean (empty) server. For more information,
-see [CentOS/RHEL - Installing cPanel & WHM 11.24](https://community.rackspace.com/products/f/25/t/6798).
+sure to install on a clean (empty) server.
 The use of Plesk or cPanel is not supported and strongly discouraged for customers under
-the Managed Operations SLA because it interferes with our server administration. For more information, see
-[Using Plesk or cPanel with the Managed Operations Service Level Agreement](https://community.rackspace.com/products/f/25/t/4888).
+the Managed Operations SLA because it interferes with our server administration.
 
 Also, consider installing the free monitoring agent on your
 server and using the [Rackspace Intelligence dashboard](https://intelligence.rackspace.com/),

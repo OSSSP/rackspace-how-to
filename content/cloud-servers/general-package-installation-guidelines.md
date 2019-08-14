@@ -1,19 +1,19 @@
 ---
 permalink: general-package-installation-guidelines/
-audit_date: '2018-12-17'
+audit_date: '2018-12-26'
 title: General package installation guidelines
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-12-21'
+last_modified_date: '2018-12-28'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 This article shows you how to use package managers to make adaptations
-to your Linux&reg; Cloud Server. The procedure for installing packages is
-similar across Linux distributions.
+to your Linux&reg; cloud server. The procedure for installing packages
+is similar across Linux distributions.
 
 ### Package managers and repositories
 
@@ -35,11 +35,11 @@ repositories and installs it on the system.
 We recommend that you read the relevant documentation to learn more
 about each of these package managers.
 
-#### Additional information
+### Linux package managers
 
 Every distribution that Cloud Servers offers comes with its own package
-manager. This article describes common package managers and provides example
-commands for different distributions.
+manager. The following sections describe common package managers and provide
+example commands for different distributions.
 
 **Warning**: Avoid performing an in-place upgrade of any of the following
 package management systems or of all installed packages between versions on
@@ -48,8 +48,8 @@ enable Rackspace Cloud Servers to communicate with the hypervisors.
 
 #### APT (Debian and Ubuntu)
 
-Debian&trade; uses the dpkg packaging system. APT (Advanced Package Tool) is a
-command-line tool for interacting with dpkg. Use the following commands to
+Advanced Package Tool (APT) is a command-line tool for interacting with dpkg,
+the packaging system used by Debian&trade;. Use the following commands to
 manage packages by using APT:
 
 -   Install a package:
@@ -83,11 +83,12 @@ manage packages by using APT:
 For more information about APT-based package management, see the following
 resources:
 
-- [Ubuntu documentation:
+- [Ubuntu&reg; documentation:
   dpkg](https://help.ubuntu.com/lts/serverguide/dpkg.html.en)
 
 - [Debian GNU/Linux
-  FAQ: Chapter 8, The Debian package management tools](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html)
+  FAQ: Chapter 8, The Debian package management
+  tools](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html)
 
 - [APT
   HOWTO](http://www.debian.org/doc/manuals/apt-howto/)
@@ -101,19 +102,19 @@ Use the following commands to manage packages by using apt-get:
 
 -   Install a package:
 
-        aptitude install PACKAGENAME
+        apt-get install PACKAGENAME
 
 -   Reinstall a package:
 
-        aptitude reinstall PACKAGENAME
+        apt-get reinstall PACKAGENAME
 
 -   Remove a package (while keeping its configuration files):
 
-        aptitude remove PACKAGENAME
+        apt-get remove PACKAGENAME
 
 -   Remove a package and purge its configuration files:
 
-        aptitude remove --purge PACKAGENAME
+        apt-get remove --purge PACKAGENAME
 
 -   Update the package list:
 
@@ -138,6 +139,9 @@ with the Yum package manager:
 -   Remove a package:
 
         yum remove PACKAGENAME
+
+    **Note**: This command might not remove all configuration files and
+    dependencies.
 
 -   Update a package:
 
@@ -189,11 +193,11 @@ Use the following commands with Pacman:
 
         pacman -S PACKAGENAME
 
--   Removea package:
+-   Remove a package (while keeping its configuration files):
 
         pacman -R PACKAGENAME
 
--   Remove a package, along with its configuration files and unneeded
+-   Remove a package and purge its configuration files and unneeded
     dependencies:
 
         pacman -Rsn PACKAGENAME
@@ -227,11 +231,8 @@ Emerge on Gentoo:
 
         emerge PACKAGENAME
 
--   Remove a package:
-
-        emerge --unmerge PACKAGENAME
-
 -   Update the package list:
+
 
         emerge --sync
 
@@ -247,14 +248,39 @@ Emerge on Gentoo:
 
         emerge --searchdesc SEARCHSTRING
 
+-   Remove a package:
+
+        emerge --depclean --ask --verbose <packagename>
+
+    This command checks if the package that you want to remove is a dependency
+    of another package before it performs the removal. If the package is not a
+    dependency, it asks you to confirm that you want remove the package. There
+    is typically a five-second delay during which you can back out of removing
+    the package. The delay is 10 seconds for packages that are important to
+    the system. If the package that you want to remove is used by another
+    package, then the command does not remove the package.
+
+    Alternatively, you can use the shorter version of this command:
+
+        emerge -cav <packagename>
+
+    After the package is removed, run the following command, but omit the
+    package name:
+
+        emerge --depclean --ask --verbose (or emerge -cav)
+
+    This command searches for deprecated dependencies that are no longer used
+    by any package. It therefore removes the dependencies from the package
+    that you just removed.
+
 For more information about Emerge and Portage, see the [Gentoo X86
 Handbook](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1).
 
 ### What if the software I'm looking for isn't in my package manager's repositories?
 
-If you can't find the software you're looking for in your package manager's main repositories, the software might not be well-known
-enough to be included. If this occurs, you can try to locate the package
-by searching the Internet.
+If you can't find the software you're looking for in your package manager's
+main repositories, the software might not be well-known enough to be included.
+If this occurs, you can try to locate the package by searching the Internet.
 
 [Rpmfind](http://rpmfind.net "http://rpmfind.net") is another
 good source for RPM packages. After you have located and downloaded the
@@ -264,8 +290,8 @@ package, you can still use your distribution's package manager to install it.
 
 In some situations, you might have to manually compile and install a
 package. This might occur when you need special customizations that
-weren't enabled by default, or when the software that you
-want to install doesn't have a pre-compiled version.
+weren't enabled by default, or when the software that you want to
+install doesn't have a pre-compiled version.
 
 If you need to manually compile and install a package, we recommend that
 you go directly to the software documentation for instructions. You almost

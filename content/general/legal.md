@@ -2,6 +2,7 @@
 permalink: legal/
 audit_date:
 title: RACKSPACE HOW-TO LICENSE
+type: article
 type: page
 created_date: '2012-08-24'
 created_by: Rackspace Support
@@ -74,7 +75,7 @@ Except as expressly provided in any written license agreement from
 Rackspace, the furnishing of this document does not give you any license
 to patents, trademarks, copyrights, or other intellectual property.
 
-Rackspace&reg;, Rackspace logo, **Fanatical Support**&reg;, and
+Rackspace&reg;, Rackspace logo, and
 RackConnect&trade; are service marks or registered service marks of Rackspace
 US, Inc. in the United States or other countries. OpenStack&trade; and
 OpenStack logo are trademarks of OpenStack, LLC.

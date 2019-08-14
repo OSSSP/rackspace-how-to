@@ -25,7 +25,7 @@ your business.
   </tr>
   <tr>
     <td><strong>Support level</strong></td>
-    <td>Dedicated hosting includes unlimited <strong>Fanatical Support</strong>&reg; for all supported products, services, and software.</td>
+    <td>Dedicated hosting includes unlimited support for all supported products, services, and software.</td>
     <td>The Cloud Managed Operations service level includes support of the data center environment, host server hardware, and Rackspace Cloud APIs.<br><br>Managed Operations support also gives Rackspace employees direct server access to perform troubleshooting and configuration of supported applications for Linux and Windows.</td>
     <td>The Cloud Managed Infrastructure service level includes support of data center environment, host server hardware, and Rackspace Cloud APIs only.<br><br>Rackspace employees are prohibited from logging in to customers' servers to provide systems administration support.</td>
   </tr>
@@ -62,8 +62,8 @@ your business.
   </tr>
   <tr>
     <td><strong>Ticketing system, control panel</strong></td>
-    <td><a href="https://login.rackspace.com/" MyRackspace portal</a></td>
-    <td><a href="https://login.rackspace.com/" Cloud Control Panel</a> and API<br><br>If your server is set up with RackConnect or linked to managed Dedicated services, you should still use the MyRackspace portal. However, the MyRackspace portal does not replace the Cloud Control Panel for managing Cloud services.</td>
-    <td><a href="https://login.rackspace.com/" Cloud Control Panel</a> and API<br><br>If you are using RackConnect, you can also leverage the MyRackspace portal to manage your Cloud services.</td>
+    <td><a href="https://login.rackspace.com/" MyRackspace Portal</a></td>
+    <td><a href="https://login.rackspace.com/" Cloud Control Panel</a> and API<br><br>If your server is set up with RackConnect or linked to managed Dedicated services, you should still use the MyRackspace Portal. However, the MyRackspace Portal does not replace the Cloud Control Panel for managing Cloud services.</td>
+    <td><a href="https://login.rackspace.com/" Cloud Control Panel</a> and API<br><br>If you are using RackConnect, you can also leverage the MyRackspace Portal to manage your Cloud services.</td>
   </tr>
 </table>
