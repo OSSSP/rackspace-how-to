@@ -4,14 +4,14 @@ audit_date: '2018-07-12'
 title: Create an object-group with Firewall Manager v2
 type: article
 created_date: '2018-07-10'
-created_by: Nate Archer
-last_modified_date: '2018-07-12'
-last_modified_by: Nate Archer
+created_by: Trevor Becker
+last_modified_date: '2019-01-21'
+last_modified_by: Renee Rendon
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a tool within the MyRackspace portal. This article describes how to create object-groups within this tool, an easy to use feature that groups and sorts like items such as IP addresses, ports, or protocols.
+Firewall Manager v2 is a tool within the MyRackspace Portal. This article describes how to create object-groups within this tool, an easy to use feature that groups and sorts like items such as IP addresses, ports, or protocols.
 
 To learn more about the tool, see [Firewall Manager v2](/how-to/firewall-manager-v2).
 
@@ -27,7 +27,7 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
 
 ### Add an object-group
 
-1. Log in to the [MyRackspace customer portal](https://my.rackspace.com/portal/auth/login) by using your Rackspace account number, username, and password.
+1. Log in to the [MyRackspace Portal](https://my.rackspace.com/portal/auth/login) by using your Rackspace account number, username, and password.
 
 2. In the top navigation bar, click **Network** > **Firewall Manager v2**.
 

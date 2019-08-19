@@ -5,7 +5,7 @@ title: Install MySQL Server on Ubuntu
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
-last_modified_date: '2018-03-13'
+last_modified_date: '2019-07-23'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -65,7 +65,7 @@ command:
 There is more than one way to work with a MySQL server, but this article
 focuses on the most basic and compatible approach, the `mysql` shell.
 
-1. At the command prompt, run the following command to launch the the `mysql`
+1. At the command prompt, run the following command to launch the `mysql`
    shell and enter it as the root user:
 
        /usr/bin/mysql -u root -p
@@ -83,10 +83,16 @@ focuses on the most basic and compatible approach, the `mysql` shell.
 If you logged in by entering a blank password, or if you want to change the root
 password that you set, you can create or change the password.
 
-1. Enter the following command in the `mysql` shell, replace `password` with
+1. For versions earlier than MySQL 5.7, enter the following command in the `mysql` shell, replace `password` with
    your new password:
 
        UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root';
+
+   For version MySQL 5.7 and later, enter the following command in the `mysql` shell, replacing `password` with
+   your new password:
+
+       UPDATE mysql.user SET authentication_string = PASSWORD('password') WHERE User = 'root';
+
 
 2. To make the change take effect, reload the stored user information with the following command:
 
@@ -96,6 +102,8 @@ password that you set, you can create or change the password.
    commands in lowercase, they'll work. By convention, the commands are
    written in all-caps to make them stand out from field names and other
    data that's being manipulated.
+
+If you need to reset the root password later, see [Reset a MySQL root password](/how-to/mysql-resetting-a-lost-mysql-root-password).
 
 ### View users
 
@@ -170,7 +178,7 @@ Some applications create a database as part of their setup process, but others
 require you to create a database yourself and tell the
 application about it.
 
-To create a database, log into the `mysql` shell and run the following command,
+To create a database, log in to the `mysql` shell and run the following command,
 replacing `demodb` with the  name of the database that you want to create:
 
     CREATE DATABASE demodb;
@@ -254,6 +262,42 @@ but can't be used to make any database changes.
 If you're just creating a database and a user, you are done. The concepts
 covered here should give you a solid start from which to learn more.
 
-### Next section
+### Related articles
 
-[Configuring MySQL server on Ubuntu](/how-to/configuring-mysql-server-on-ubuntu)
+- [Configure MySQL server on Ubuntu](/how-to/configuring-mysql-server-on-ubuntu)
+- [Reset a MySQL root password](/how-to/mysql-resetting-a-lost-mysql-root-password)
+
+
+<script type="application/ld+json">
+   {
+   "@context": "http://schema.org/",
+   "@type": "HowTo",
+   "name":"Install MySQL Server on Ubuntu",
+   "description": "This article describes a basic installation of a MySQL database server on Ubuntu Linux.",
+   "step": [
+   	{
+   	"@type": "HowToSection",
+   	"name": "Install MySQL",
+       "position": "1",
+   	"itemListElement": "To install the MySQL server by using the Ubuntu package manager, run the following command: sudo apt-get install mysql-server"
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Allow remote access and start the service",
+       "position": "2",
+   	"itemListElement": [
+   		{
+           "@type": "HowToStep",
+           "position": "1",
+   		"text": "Run the following command to allow remote access to the mysql server: sudo ufw allow mysql"
+   		},{
+           "@type": "HowToStep",
+           "position": "2",
+           "text": "To start the MySQL service, run the following command:  systemctl start mysql"
+   		}]
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Configure MySQL to launch on reboot",
+       "position": "3",
+   	"itemListElement": "To set a MySQL to launch at reboot, run the following command: systemctl enable mysql"
+   }]}
+</script>

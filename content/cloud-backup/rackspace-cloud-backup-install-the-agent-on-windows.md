@@ -5,15 +5,15 @@ title: Install the Cloud Backup agent on Windows
 type: article
 created_date: '2014-05-01'
 created_by: Megan Meza
-last_modified_date: '2017-06-23'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 product_url: cloud-backup
 ---
 
-This article describes how to install the Rackspace Cloud Backup agent on your Windows server. If you are using a Linux server, see [Install the Cloud Backup Agent (Linux)](/how-to/rackspace-cloud-backup-install-the-agent-on-linux) for the parallel instructions.
+This article describes how to install the Rackspace Cloud Backup agent on your Windows server. If you are using a Linux server, see [Install the Cloud Backup agent (Linux)](/how-to/rackspace-cloud-backup-install-the-agent-on-linux) for the parallel instructions.
 
-To update the agent, see the instructions in [Update the Rackspace Cloud Backup Agent.](/how-to/update-the-rackspace-cloud-backup-agent)
+To update the agent, see the instructions in [Update the Rackspace Cloud Backup agent.](/how-to/update-the-rackspace-cloud-backup-agent)
 
 ### Requirements
 
@@ -92,7 +92,7 @@ administrator account of the server.
 
 #### Update Cloud Backup agent on Windows
 
-For instructions to update the agent on Windows, see [Update the Rackspace Cloud Backup Agent.](/how-to/update-the-rackspace-cloud-backup-agent)
+For instructions to update the agent on Windows, see [Update the Rackspace Cloud Backup agent.](/how-to/update-the-rackspace-cloud-backup-agent)
 
 
 ### Test the Windows installation or update
@@ -341,4 +341,4 @@ The following changes should occur:
 
         The specified service does not exist as an installed service.
 
-**Next steps:** [Create a backup](/how-to/rackspace-cloud-backup-create-a-backup-0)
+**Next steps:** [Create a backup](/how-to/rackspace-cloud-backup-create-a-backup)
