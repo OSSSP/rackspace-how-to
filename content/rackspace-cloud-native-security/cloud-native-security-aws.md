@@ -1,5 +1,5 @@
     ---
-    permalink: cloud-native-security/
+    permalink: cloud-native-security-aws/
     audit_date:
     title: Rackspace Cloud Native Security on AWS
     type: article
@@ -8,5 +8,5 @@
     last_modified_date: '2019-08-19'
     last_modified_by: Toby Dillman
     product: Rackspace Cloud Native Security
-    product_url: https://support.rackspace.com/how-to/cloud-native-security
+    product_url: https://support.rackspace.com/how-to/cloud-native-security-aws/
     ---
