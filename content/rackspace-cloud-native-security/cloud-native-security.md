@@ -1,7 +1,7 @@
     ---
     permalink: cloud-native-security/
     audit_date:
-    title: Rackspace Cloud Native Security on AWS
+    title: Rackspace Cloud Native Security
     type: article
     created_date: '2019-08-19'
     created_by: Toby Dillman
