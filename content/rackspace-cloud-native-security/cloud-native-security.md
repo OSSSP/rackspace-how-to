@@ -44,12 +44,7 @@ Once the findings have been analysed, escalation and notification processes will
 
 ## Investigation and Remediation of Findings 
 
-GuardDuty monitors your AWS environment to detect security findings like:  
-
-EC2 instance might be compromised 
-Credentials might be compromised 
-Security Group misconfiguration 
-Root credentials being used 
+GuardDuty monitors your AWS environment to detect security findings like a compromised EC2 instance or cloud credential, a misconfigured security group, or the use of root account credentials.
 
 Rackspace will investigate the findings and will recommend remediation actions. On AWS accounts that include the Manage & Operate Service Block, Rackspace will remediate the findings and will engage the customer as necessary according to the runbook. 
 
