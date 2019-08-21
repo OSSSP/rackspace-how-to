@@ -17,7 +17,7 @@ Cloud providers are constantly expanding their portfolio of native security prod
 
 AWS customers who want to improve their security posture by using products like [Amazon GuardDuty](https://aws.amazon.com/guardduty/ "Amazon GuardDuty") and [AWS Security Hub](https://aws.amazon.com/security-hub/ "AWS Security Hub"), but do not have the expertise or the resources to invest in a 24/7/365 SOC, are now able to utilize the Cloud Native Security Service Block from Rackspace. 
 
-Amazon GuardDuty provides threat detection utilising existing AWS native data sources (CloudTrail Logs, VPC Flow Logs, and DNS Logs) without the requirement for any potentially disruptive deployment steps such as agent installation. AWS describes GuardDuty as a service that "uses machine learning, anomaly detection, and integrated threat intelligence to identify and prioritize potential threats”. AWS Security Hub provides the aggregation point for GuardDuty findings across multiple AWS accounts, acts as the conduit to Rackspace systems, and serves as a single pane of glass for all native security services which emit findings. 
+Amazon GuardDuty provides threat detection utilising existing AWS native data sources (CloudTrail Logs, VPC Flow Logs, and DNS Logs) without any potentially disruptive deployment steps such as agent installation. AWS describes GuardDuty as a service that "uses machine learning, anomaly detection, and integrated threat intelligence to identify and prioritize potential threats”. AWS Security Hub provides the aggregation point for GuardDuty findings across multiple AWS accounts, acts as the conduit to Rackspace systems, and serves as a single pane of glass for all native security services which emit findings. 
 
 ## Deployment and Configuration 
 
