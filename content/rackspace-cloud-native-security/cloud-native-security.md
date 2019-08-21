@@ -33,7 +33,7 @@ Rackspace security specialists will monitor Security Hub and GuardDuty findings 
 * High: 60 minutes 
 * Medium: 4 hours 
   
-Rackspace security specialists will analyse and filter the findings and will apply context based on customer’s runbook. Examples: 
+Rackspace security specialists will analyse and filter the findings and will apply context based on customer’s runbook -- for example: 
 
 * Identification of false-positive findings 
 * Identification of affected environment – production/test/dev 
