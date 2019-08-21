@@ -7,8 +7,8 @@ created_date: '2019-08-19'
 created_by: Toby Dillman
 last_modified_date: '2019-08-21'
 last_modified_by: Toby Dillman
-product: Rackspace Cloud Native Security
-product_url: cloud-native-security
+product: undefined
+product_url: undefined
 ---
 
 # Cloud Native Security for AWS (beta release)
