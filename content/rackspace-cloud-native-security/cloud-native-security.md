@@ -1,5 +1,5 @@
 ---
-permalink: cloud-native-security/
+permalink: cloud-native-security
 audit_date:
 title: Rackspace Cloud Native Security
 type: article
@@ -8,7 +8,7 @@ created_by: Toby Dillman
 last_modified_date: '2019-08-21'
 last_modified_by: Toby Dillman
 product: Rackspace Cloud Native Security
-product_url: https://support.rackspace.com/how-to/cloud-native-security/
+product_url: cloud-native-security
 ---
 
 # Cloud Native Security for AWS (beta release)
