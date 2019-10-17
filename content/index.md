@@ -10,8 +10,8 @@ permalink: /
 
 			<div class="filter-product-type">
 				<ul>
-				  <li><a id="getting-started" class="inactive">Getting Started</a></li>
-					<li><a id="cloud-ctrl" class="inactive">Cloud Hosting</a></li>
+				  <li><a id="gs-ctrl" class="inactive">Getting Started</a></li>
+					<li><a id="cloud-ctrl" class="inactive">Cloud Services</a></li>
 					<li><a id="office-ctrl" class="inactive">Cloud Office</a></li>
 					<li>
 						<a href="/how-to/dedicated-hosting">Dedicated Hosting</a>
@@ -31,7 +31,10 @@ permalink: /
 			<br>
 			<aside class="cta">
 				<p class="button">
-					<a href="/how-to/getting-started-with-public-cloud/" id="email-button" class="banner-button">Get Started with Rackspace Public Cloud</a>
+					<a href="/how-to/getting-started-with-public-cloud/" id="cloud-button" class="banner-button">Get Started with Rackspace Public Cloud</a>
+				</p>
+				<p class="button">
+					<a href="/how-to/getting-started-with-hosted-email/" id="hosted-button" class="banner-button">Get Started with Rackspace Hosted Email</a>
 				</p>
 			</aside>
 			</div>

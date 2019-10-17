@@ -5,8 +5,8 @@ title: Cloud Backup FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2019-01-29'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-09-13'
+last_modified_by: Brett Johnson
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -79,6 +79,16 @@ Cloud Backup has the following key features:
 For information on getting started with Cloud Backup, see our [introduction to
 Cloud Backup](/how-to/cloud-backup).
 
+#### Why do I have to keep offsite copies of containers on non-Rackspace media?
+
+If you choose to keep offsite copies of backup containers, it provides an
+extra layer of protection from bad actors who might obtain your Rackspace account
+credentials from you and delete all your cloud assets.
+
+In order to protect these offsite copies from the bad actor, they must reside on
+media that is *not* accessible by using the stolen credentials. Otherwise, the
+bad actor is able to delete them, too.
+
 #### Can Cloud Backup change my system configuration file, even after I have modified it?
 
 Yes. Some Ubuntu&reg; users have older agents installed on their machines.
@@ -142,24 +152,19 @@ in the list of Cloud Backup actions.
 #### Can I use Cloud Backup on my server?
 
 You can use Cloud Backup on virtually any server in the
-Rackspace Cloud. The exceptions are FreeBSD 9, Debian&reg; 5 and Windows&reg;
+Rackspace Cloud. Some exceptions are FreeBSD 9, Debian&reg; 5 and Windows&reg;
 2003.
 
-**Note**: If you have servers that are not in the Rackspace Cloud,
-you can use the equivalent service offered by [JungleDisk](https://jungledisk.com/) for those servers.
-
-If you have a server with a Managed Operations service level, you might
-already have the Cloud Backup agent installed on your system. If not,
-contact your Account Representative to get started.
+**Note**: If you have servers that are not in the Rackspace Cloud that are running operating
+systems that are supported by the Rackspace the following installer links for more details.
 
 Before you can use Cloud Backup, you must have the backup agent installed and
 running on your cloud server. Cloud servers with a Managed Operations service
 level should have this additional piece of software installed by default. If it
 is not installed, contact your Account Representative to get started. If you
 have an infrastructure-only account, you must manually install the agent by
-following these instructions for [Linux&reg;](https://support.rackspace.com/how-to/install-or-update-the-cloud-backup-agent-on-linux/)
-or for [Windows](https://support.rackspace.com/how-to/rackspace-cloud-backup-install-the-agent-on-windows-by-using-silent-installation/).
-
+following these instructions for [Linux&reg;](/how-to/install-or-update-the-cloud-backup-agent-on-linux/)
+or for [Windows&reg;](/how-to/rackspace-cloud-backup-install-the-agent-on-windows-by-using-silent-installation/).
 
 For more information, see the [Rackspace Cloud Backup introduction](/how-to/cloud-backup).
 

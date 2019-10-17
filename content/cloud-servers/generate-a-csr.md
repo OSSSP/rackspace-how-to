@@ -5,7 +5,7 @@ title: Generate a certificate signing request
 type: article
 created_date: '2018-10-23'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-12-21'
+last_modified_date: '2019-09-12'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -129,11 +129,11 @@ After you have generated the CSR, you can submit it to a CA to purchase an SSL c
 
 Rackspace provides the CSR Generator for generating a CSR. The CSR Generator shows you the CSRs that you currently have and lets you create new CSRs with a simple form. After you have entered your details, the generator combines them with your private key so that you can submit the combined encoded information to a CA.
 
-When you are done with the generator, you can return to the Cloud Control Panel by clicking any of the terms in the top navigation or by going to [login.rackspace.com](https://login.rackspace.com) and selecting **Rackspace Cloud** from the drop-down product menu in the top navigation bar.
+When you are done with the generator, you can return to the Cloud Control Panel by clicking any of the links in the top navigation or by going to [login.rackspace.com](https://login.rackspace.com) and selecting **Rackspace Cloud** from the drop-down product menu in the top navigation bar.
 
 #### Access the CSR Generator
 
-Access the CSR Generator [directly](https://csrgenerator.rackspace.com) or through the control panel by using the following steps:
+Access the CSR Generator [directly](https://csrgenerator.rackspace.com) or through the Control Panel by using the following steps:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com) and select **Rackspace Cloud** from the drop-down product menu in the top navigation bar.
 2. In the top navigation bar, click **Servers > Cloud Servers**.
