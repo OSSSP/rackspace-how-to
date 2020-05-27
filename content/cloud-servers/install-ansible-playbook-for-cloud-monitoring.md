@@ -37,7 +37,7 @@ Monitoring on your cloud server by using the following steps:
 
 4. Download the playbook by running the following command:
 
-        git clone https://github.com/stevekaten/cloud-monitoring-plugin-deploy
+        git clone --depth 1 https://github.com/stevekaten/cloud-monitoring-plugin-deploy
 
 5. Move to the repository that holds the playbook that you just downloaded by
    running the following command:

@@ -33,7 +33,7 @@ the Git website for UNIX or Linux or for Windows.
 ### Downloading an SDK
 
 To download an SDK, follow the instructions on the SDK's web page. In
-general, you run a git clone command with the URL of the repository that
+general, you run a git clone --depth 1 command with the URL of the repository that
 you want to get as an argument. Because the clone operation downloads
 the files to your current directory, you should create an empty
 directory to hold the files before performing the download.

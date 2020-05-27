@@ -29,7 +29,7 @@ Carbon Forwarder has the following dependencies.
 
 Use the following command to install Carbon Forwarder.
 
-    git clone https://github.com/rackerlabs/blueflood-carbon-forwarder.git
+    git clone --depth 1 https://github.com/rackerlabs/blueflood-carbon-forwarder.git
 
     cd blueflood-carbon-forwarder
 
